@@ -6,10 +6,13 @@ public class Task3 {
       Scanner scanner = new Scanner(System.in);
       System.out.println("ANNA NUMERO ");
       int eka = Integer.valueOf(scanner.nextLine());
+      //int eka = scanner.nextInt();
       System.out.println("ANNA NUMERO ");
       int toka = Integer.valueOf(scanner.nextLine());
+      //int toka = scanner.nextInt();
       System.out.println("ANNA NUMERO ");
       int kolmas = Integer.valueOf(scanner.nextLine());
+     // int kolmas = scanner.nextInt();
       double avg = eka + toka + kolmas;
       System.out.println("Summa Nr= " + (eka + toka + kolmas));
       System.out.println("Summa Tuote = " + (eka * toka * kolmas));
