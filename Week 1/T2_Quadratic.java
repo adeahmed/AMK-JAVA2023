@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class T1_Quadratic {
+public class T2_Quadratic {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Anna nro a: ");
@@ -12,7 +12,7 @@ public class T1_Quadratic {
         double c = in.nextDouble();
         double d = b * b - 4.0 * a * c;
         System.out.println(d);
-         if (d > 0.0) {
+        if (d > 0.0) {
             double r1 = (-b + Math.pow(d, 0.5)) / (2.0 * a);
             double r2 = (-b - Math.pow(d, 0.5)) / (2.0 * a);
             System.out.println("Roots are " + r1 + " and " + r2);
@@ -25,5 +25,3 @@ public class T1_Quadratic {
         in.close();
     }
 }
-
-
