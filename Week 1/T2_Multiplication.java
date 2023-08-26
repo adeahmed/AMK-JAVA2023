@@ -13,7 +13,7 @@ public class T2_Multiplication {
             pisteet = 0;
             for (int KysymysNr = 1; KysymysNr <= 10; KysymysNr++) { // Muista ain määritellä for silmukassa mikä tyyppi
                                                                     // aluksi!!
-                int luku1 = random.nextInt(10) + 1; // tähän perää voin kanssa laittaa 
+                int luku1 = random.nextInt(10) + 1; // tähän perää voin kanssa laittaa
                 int luku2 = random.nextInt(10) + 1;
                 int oikeeVastaus = luku1 * luku2;
                 System.out.println("Kysymys " + KysymysNr + ": Paljonko on " + luku1 + " * " + luku2 + "?");
@@ -31,17 +31,12 @@ public class T2_Multiplication {
             if (pisteet == 10 && pisteet >= 10) {
                 System.out.println("Hyvä! Hallitset kertotaulukot");
                 uusPeli = true;
-            }
-            // else if(pisteet < 10){ // Tän olis voinu käyttä mut yllä oleva if lauseessa
-            // on kaksi ehtoo niin tätä ei tarvittu.
-            // }
-            else {
+            } else {
                 System.out.println("Uusiks meni! Tarvitset lisää harjoitusta");
                 pisteet = 0;
             }
         }
-         lukija.close();
+        lukija.close();
     }
-   
 
 }
