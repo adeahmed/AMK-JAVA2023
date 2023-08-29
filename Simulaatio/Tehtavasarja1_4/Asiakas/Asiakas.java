@@ -2,55 +2,67 @@
 public class Asiakas {
     private static int nextId = 1;
     private int id;
-    private long startTime, endTime;
+    private long aloitusaika, lopetusaika;
 
     public Asiakas() {
-        System.out.println(nextId);
         this.id = nextId++;
     }
-    // Aseta asiakkaan aloitusaika
-    public void aloitaAsiointi() {
-        startTime = System.currentTimeMillis();
+
+    public int getId() {
+        return id;
     }
 
-    // Aseta asiakkaan lopetusaika
-    public void lopetaAsiointi() {
-        endTime = System.currentTimeMillis();
+    public long getAloitusaika() {
+        return aloitusaika;
     }
 
-    // Metodi kulutetun ajan laskemiseen
+    public void setAloitusaika(long aloitusaika) {
+        this.aloitusaika = aloitusaika;
+    }
+
+    public long getLopetusaika() {
+        return lopetusaika;
+    }
+
+    public void setLopetusaika(long lopetusaika) {
+        this.lopetusaika = lopetusaika;
+    }
+
     public long getKulunutAika() {
-        return endTime - startTime;
+        return lopetusaika - aloitusaika;
     }
 
     public static void main(String[] args) {
-        System.out.println("Load");
-
         Asiakas a1 = new Asiakas();
-        // Asiakas a2 = new Asiakas();
+        Asiakas a2 = new Asiakas();
         Asiakas a3 = new Asiakas();
 
-        // Asetetaan aloitus- ja lopetusaika a1:lle ja a3:lle
-        a1.aloitaAsiointi();
-        // Simuloidaan 5 sekunnin kulunutta aikaa
+        a1.setAloitusaika(System.currentTimeMillis());
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        a1.setLopetusaika(System.currentTimeMillis());
+
+        a2.setAloitusaika(System.currentTimeMillis());
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        a2.setLopetusaika(System.currentTimeMillis());
+
+        a3.setAloitusaika(System.currentTimeMillis());
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        a1.lopetaAsiointi();
+        a3.setLopetusaika(System.currentTimeMillis());
 
-        a3.aloitaAsiointi();
-        // Simuloidaan 7 sekunnin kulunutta aikaa
-        try {
-            Thread.sleep(7000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        a3.lopetaAsiointi();
-
-        System.out.println("Asiakkaan " + a1.id + " kulunut aika: " + a1.getKulunutAika() + " ms");
-        System.out.println("Asiakkaan " + a3.id + " kulunut aika: " + a3.getKulunutAika() + " ms");
-        
+        System.out.println("Asiakkaan " + a1.getId() + " kulunut aika: " + a1.getKulunutAika() + " ms");
+        System.out.println("Asiakkaan " + a2.getId() + " kulunut aika: " + a2.getKulunutAika() + " ms");
+        System.out.println("Asiakkaan " + a3.getId() + " kulunut aika: " + a3.getKulunutAika() + " ms");
     }
 }

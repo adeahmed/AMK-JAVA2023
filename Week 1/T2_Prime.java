@@ -24,6 +24,7 @@ public class T2_Prime {
                 }
                 if (isPrime) {
                     System.out.println(i);
+                 // System.out.printf("%02d", i); testi forma tulostus 
                 }
             }
 
