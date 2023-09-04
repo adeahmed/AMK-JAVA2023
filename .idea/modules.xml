@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AMK-JAVA2023.iml" filepath="$PROJECT_DIR$/AMK-JAVA2023.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Simulaatio/Simulaatio.iml" filepath="$PROJECT_DIR$/Simulaatio/Simulaatio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Simulaatio/Tehtavasarja1_4/Tehtavasarja1_4.iml" filepath="$PROJECT_DIR$/Simulaatio/Tehtavasarja1_4/Tehtavasarja1_4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week 2/Week 2.iml" filepath="$PROJECT_DIR$/Week 2/Week 2.iml" />
+    </modules>
+  </component>
+</project>
