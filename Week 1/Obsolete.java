@@ -20,6 +20,6 @@ public class Obsolete {
         double luodit1 = naulat2 * 32;
         System.out.printf((int) paino + " g on " + (int) leiviskat + " leiviskä, " + (int) naulat1
         + " naulaa, ja %.2f luotia", luodit1);
-        lukija.close();
+
     }
 }

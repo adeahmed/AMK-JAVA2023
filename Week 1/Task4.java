@@ -10,11 +10,8 @@ public class Task4 {
     }
 
     public static void main(String[] args) {
-        // Create an instance of the Cat class with a name
         Task4 cat = new Task4("Whiskers");
         Task4 rex = new Task4 ("Rex");
-
-        // Call the meow method on the cat instance
         cat.meow();
         cat.meow();
         rex.meow();

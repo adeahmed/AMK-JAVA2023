@@ -17,7 +17,7 @@ public class Task3 {
       System.out.println("Summa Nr= " + (eka + toka + kolmas));
       System.out.println("Summa Tuote = " + (eka * toka * kolmas));
       System.out.println("Summa avg = " + (avg / 3));
-      scanner.close();
+
    }
 }
 
