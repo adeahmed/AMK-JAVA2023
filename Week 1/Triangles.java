@@ -10,7 +10,7 @@ public class Triangles {
         double c;
         c = Math.sqrt(a * a + b * b);
         System.out.printf(" %.2f Hypotenuusa on ", c);
-        scanner.close();
+        
 
     }
 }
