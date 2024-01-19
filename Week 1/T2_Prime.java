@@ -29,6 +29,6 @@ public class T2_Prime {
             }
 
         }
-        lukija.close();
+
     }
 }

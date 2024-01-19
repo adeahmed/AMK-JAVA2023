@@ -22,7 +22,7 @@ public class T3_Duplicates {
         for (int lukuTulos : tulosTaulukko) {
             System.out.print(lukuTulos + " ");
         }
-        lukija.close();
+
     }
 }
 

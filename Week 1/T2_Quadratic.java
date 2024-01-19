@@ -22,6 +22,6 @@ public class T2_Quadratic {
         } else {
             System.out.println("Roots are not real.");
         }
-        in.close();
+
     }
 }

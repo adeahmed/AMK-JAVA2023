@@ -36,7 +36,7 @@ public class T2_Multiplication {
                 pisteet = 0;
             }
         }
-        lukija.close();
+
     }
 
 }

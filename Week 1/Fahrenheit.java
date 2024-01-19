@@ -10,7 +10,7 @@ public class Fahrenheit {
     fahrenheit = 1.8 * celsius + 32;
     System.out.printf("" + celsius + " celcius  astetta on %.1f fahrenheit-astetta",
         fahrenheit);
-    // System.out.println(fahrenheit);
+
     lukija.close();
   }
 

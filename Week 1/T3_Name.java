@@ -19,7 +19,7 @@ public class T3_Name {
         } else {
             System.out.println();
         }
-        lukija.close();
+
 
     }
 }

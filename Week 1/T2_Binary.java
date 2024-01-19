@@ -11,6 +11,6 @@ public class T2_Binary {
         } else {
             System.out.println("Syöte ei ole kelvollinen binääriluku.");
         }
-        sc.close();
+
     }
 }

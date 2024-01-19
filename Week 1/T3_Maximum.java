@@ -34,7 +34,7 @@ public class T3_Maximum {
         System.out.println("Suurin summa: " + maxSum);
         System.out.println("Alitaulukon indeksit: " + (starttiIndex + 1) + " - " + (endIndex + 1));
 
-        lukija.close();
+
     }
 }
 
